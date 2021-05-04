@@ -7,27 +7,47 @@
     <link rel="stylesheet" href="style.css">
     <title>Coffee Club</title>
 </head>
-<body>
+<body class="grid-container">
     <header>
-        <img>
-        <h3>Forza Coffee</h3>
-        <img>
+        <img src="src\MinILOGO.png" id="miniLogo">
+        <div class="header-center">
+            <h1 id="title">Forza Coffee</h1> 
+        </div>
+        <hr>
+        
     </header>
     <nav>
-        <a><img></a>
-        <a><img></a>
-        <a><img></a>
-        <a><img></a>
+        <ul class="navBar">
+            <li><a href="index.html"><img src="src/home.png"></a></li>
+            <li><a href="info.html"><img src="src/INFO.png"></a></li>
+            <li><a href="location.html"><img src="src/location.png"></a></li>
+            <li><a href="#"><img src="src/LS.png" id="navSelected"></a></li>
+        </ul>
     </nav>
-    <main>
-        <aside>
-            <a><img</a>
-        </aside>
-        <aside>
-            <a><img></a>
-        </aside>
-        <h3>Loyalty Scheme</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis veniam adipisci facilis enim, expedita ad dolorum libero atque deleniti ut totam esse voluptatibus quis rerum iste ipsa. Eum, nam!</p>  
+    <aside class="menu-left">
+        <a href="location.html"><img src="src/leftArrow.png"></a>
+    </aside>
+    <main class="mainCC">
+        <h1>Loyalty Scheme</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis veniam adipisci facilis enim, expedita ad dolorum libero atque deleniti ut totam esse voluptatibus quis rerum iste ipsa. Eum, nam!</p>      
+        <form action="submitted.html" method="POST" id="form">    
+            <fieldset>
+                <legend>Enter your infomration</legend>
+                <ul class="formInput">
+                    <label>Full Name</label>
+                    <li><input type="text" name="fullname" placeholder=" Full name..."required></li>
+                    <label>Email Adress</label>
+                    <li><input type="email" name="email" placeholder=" Email@Adress.co.uk" required></li>
+                    <label>Frequency of Visitis per Month</label>
+                    <li><input type="number" placeholder=" 3" required></li>
+                    <input type="submit">
+                </ul>
+            </fieldset>
+        </form>
     </main>
+    <aside class ="menu-right">
+        <a href="index.html"><img src="src/rightArrow.png"></a>
+    </aside>
+    <footer>Footer</footer>
 </body>
 </html>
