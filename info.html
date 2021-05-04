@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- A boilerplate telling the browser the HTML Metadata -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <title>Information</title>
 </head>
+
+<!-- Main body containing the HTML, sets the grid container to the body. -->
 <body class="grid-container">
+
+    <!-- The header contains a text heading and a small logo contained within a flexbox. -->
     <header>
-        <img src="src\MinILOGO.png" id="miniLogo">
+        <img src="src/miniLogo.png" id="miniLogo" alt="Company logo of a two coffee beans">
         <div class="header-center">
             <h1 id="title">Forza Coffee</h1> 
         </div>
-        <hr>
-        
+        <hr id="titleUnderLine">
     </header>
+
+    <!-- The navigation bar consits of 4 clickable elements within a flexbox that are responsive to the window size. -->
     <nav>
         <ul class="navBar">
-            <li><a href="index.html"><img src="src/home.png"></a></li>
-            <li><a href="#"><img src="src/INFO.png" id="navSelected"></a></li>
-            <li><a href="location.html"><img src="src/location.png"></a></li>
-            <li><a href="coffee-club.html"><img src="src/LS.png"></a></li>
+            <li><a href="index.html"><img src="src/home.png" alt="Home pagebutton"></a></li>
+            <li><a href="#"><img src="src/info.png" id="navSelected" alt="Infomation page button"></a></li>
+            <li><a href="location.html"><img src="src/location.png" alt="Shop location page button"></a></li>
+            <li><a href="coffee-club.html"><img src="src/LS.png" alt="Coffee club page button"></a></li>
         </ul>
     </nav>
+
+    <!-- The left side menu used by larger screens to cycle through the pages. -->
     <aside class="menu-left">
-        <a href="index.html"><img src="src/leftArrow.png"></a>
+        <a href="index.html"><img src="src/leftArrow.png" alt="Navigate to the left page"></a>
     </aside>
+
+    <!-- The main section contains information about what Forza Coffee is all about. -->
     <main class="main">
         <section class="section1">
-            <img src="src/roundLogo.png" id="section1picture">
+            <img src="src/roundLogo.png" id="section1picture" alt="Company logo of a two coffee beans">
             <div class="section1Content">
-                <h2 id="sectionTitle">Fair Trade</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis veniam adipisci facilis enim, expedita ad dolorum libero atque deleniti ut totam esse voluptatibus quis rerum iste ipsa. Eum, nam!</p>    
+                <h2 class="sectionTitle">Fair Trade</h2>
+                <p>Its our promise that we use sustianble sourcing of all of our ingrients and we use Fair Trade products wherehere possible. We believe in leaving our planet a better place than we found it!</p>    
             </div>
         </section>
         <section class="section2">
-            <img src="src/roundLogo.png" id="section2picture">
+            <img src="src/roundLogo.png" id="section2picture" alt="Company logo of a two coffee beans">
             <div class="section2Content">
-                <h2 id="sectionTitle">Ethics</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis veniam adipisci facilis enim, expedita ad dolorum libero atque deleniti ut totam esse voluptatibus quis rerum iste ipsa. Eum, nam!</p>    
+                <h2 class="sectionTitle">Ethics</h2>
+                <p>Here at Forza Coffee we like to help you whereever we can, additionaly we keen to support relief and development work. We pledge to donate 10% of our gross income to developing contried by supporting charities like Oxfam International, The Hunger Project and Save the Children</p>    
             </div>
             </section>
     </main>
+
+    <!-- The right side menu used by larger screens to cycle through the pages. -->
     <aside class ="menu-right">
-        <a href="location.html"><img src="src/rightArrow.png"></a>
+        <a href="location.html"><img src="src/rightArrow.png" alt="Navigate to the right page"></a>
     </aside>
-    <footer>Footer</footer>
+
+    <!-- Footer containing a signature. -->
+    <footer>Jack Holdsworth 20023933</footer>
 </body>
 </html>

@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- A boilerplate telling the browser the HTML Metadata -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <title>Coffee Club</title>
 </head>
+
+<!-- Main body containing the HTML, sets the grid container to the body. -->
 <body class="grid-container">
+
+    <!-- The header contains a text heading and a small logo contained within a flexbox. -->
     <header>
-        <img src="src\MinILOGO.png" id="miniLogo">
+        <img src="src/miniLogo.png" id="miniLogo" alt="Company logo of a two coffee beans">
         <div class="header-center">
             <h1 id="title">Forza Coffee</h1> 
         </div>
-        <hr>
-        
+        <hr id="titleUnderLine">
     </header>
+
+    <!-- The navigation bar consits of 4 clickable elements within a flexbox that are responsive to the window size. -->
     <nav>
         <ul class="navBar">
-            <li><a href="index.html"><img src="src/home.png"></a></li>
-            <li><a href="info.html"><img src="src/INFO.png"></a></li>
-            <li><a href="location.html"><img src="src/location.png"></a></li>
-            <li><a href="#"><img src="src/LS.png" id="navSelected"></a></li>
+            <li><a href="index.html"><img src="src/home.png" alt="Home pagebutton"></a></li>
+            <li><a href="info.html"><img src="src/info.png" alt="Infomation page button"></a></li>
+            <li><a href="location.html"><img src="src/location.png" alt="Shop location page button"></a></li>
+            <li><a href="#"><img src="src/LS.png" id="navSelected" alt="Coffee club page button"></a></li>
         </ul>
     </nav>
+
+    <!-- The left side menu used by larger screens to cycle through the pages. -->
     <aside class="menu-left">
-        <a href="location.html"><img src="src/leftArrow.png"></a>
+        <a href="location.html"><img src="src/leftArrow.png" alt="Navigate to the left page"></a>
     </aside>
+
+    <!-- The main section contains a form and privary policy to express interest in the loyalty scheme. -->
     <main class="mainCC">
-        <h1>Loyalty Scheme</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis veniam adipisci facilis enim, expedita ad dolorum libero atque deleniti ut totam esse voluptatibus quis rerum iste ipsa. Eum, nam!</p>      
+        <h2>Loyalty Scheme</h2>
+        <p id="mainParagraph">Here at Forza Coffee we plan to introduce a loyalty scheme for our regular customers, please use the form below to express interest. Early adopters of the loyalty scheme will be get additional benefits</p>      
+        
+        <!-- HTML5 form used to collect infomration and POST to another page(submitted.html is not yet impletement) -->
         <form action="submitted.html" method="POST" id="form">    
             <fieldset>
                 <legend>Enter your infomration</legend>
                 <ul class="formInput">
-                    <label>Full Name</label>
-                    <li><input type="text" name="fullname" placeholder=" Full name..."required></li>
-                    <label>Email Adress</label>
+                    <li><label>Full Name</label></li>
+                    <li><input type="text" name="fullname" placeholder=" Full name..." required></li>
+                    <li><label>Email Adress</label></li>
                     <li><input type="email" name="email" placeholder=" Email@Adress.co.uk" required></li>
-                    <label>Frequency of Visitis per Month</label>
+                    <li><label>Frequency of Visitis per Month</label></li>
                     <li><input type="number" placeholder=" 3" required></li>
-                    <input type="submit">
+                    <li><input type="submit"></li>
                 </ul>
             </fieldset>
         </form>
+        <a href="src/PrivacyPolicy.pdf">Privacy Policy</a>
     </main>
+
+    <!-- The right side menu used by larger screens to cycle through the pages. -->
     <aside class ="menu-right">
-        <a href="index.html"><img src="src/rightArrow.png"></a>
+        <a href="index.html"><img src="src/rightArrow.png" alt="Navigate to the right page"></a>
     </aside>
-    <footer>Footer</footer>
+
+    <!-- Footer containing a signature. -->
+    <footer>Jack Holdsworth 20023933</footer>
 </body>
 </html>

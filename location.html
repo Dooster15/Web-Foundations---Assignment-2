@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- A boilerplate telling the browser the HTML Metadata -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/shopSearch.js"></script>
     <title>Locations</title>
 </head>
+
+<!-- Main body containing the HTML, sets the grid container to the body. -->
 <body class="grid-container">
+
+    <!-- The header contains a text heading and a small logo contained within a flexbox. -->
     <header>
-        <img src="src\MinILOGO.png" id="miniLogo">
+        <img src="src/miniLogo.png" id="miniLogo" alt="Company logo of a two coffee beans">
         <div class="header-center">
             <h1 id="title">Forza Coffee</h1> 
         </div>
-        <hr>
-        
+        <hr id="titleUnderLine">
     </header>
+
+    <!-- The navigation bar consits of 4 clickable elements within a flexbox that are responsive to the window size. -->
     <nav>
         <ul class="navBar">
-            <li><a href="index.html"><img src="src/home.png"></a></li>
-            <li><a href="info.html"><img src="src/INFO.png"></a></li>
-            <li><a href="#"><img src="src/location.png" id="navSelected"></a></li>
-            <li><a href="coffee-club.html"><img src="src/LS.png"></a></li>
+            <li><a href="index.html"><img src="src/home.png" alt="Home pagebutton"></a></li>
+            <li><a href="info.html"><img src="src/info.png" alt="Infomation page button"></a></li>
+            <li><a href="#"><img src="src/location.png" id="navSelected" alt="Shop location page button"></a></li>
+            <li><a href="coffee-club.html"><img src="src/LS.png" alt="Coffee club page button"></a></li>
         </ul>
     </nav>
+
+    <!-- The left side menu used by larger screens to cycle through the pages. -->
     <aside class="menu-left">
-        <a href="info.html"><img src="src/leftArrow.png"></a>
+        <a href="info.html"><img src="src/leftArrow.png" alt="Navigate to the left page"></a>
     </aside>
-    <main class="main">
-        <h3>Shop Locations</h3>
-        <ul>
-            <li>Birmingham</li>
-            <li>Manchester</li>
-            <li>Bristol</li>
-            <li>Liverpool</li>
-            <li>Oxford</li>
-            <li>Cambridge</li>
-            <li>Glasgow</li>
-            <li>Cardiff</li>
-            <li>Belfast</li>
-            <li>Dublin</li>
-            <li>York</li>
-            <li>Bath</li>
-            <li>Edinburgh</li>
-            <li>Central London</li>
-        </ul>
+
+    <!-- The main section contains information about where Forza Coffee's are going to be built. -->
+    <main class="mainCC">
+        <h2>Shop Locations</h2>
+        <div class="mainLocation" id="searchContainer">
+
+            <!-- A search function powered by Javascript (getElementById()) -->
+            <div id="searchBox">
+                Find a Forza Coffee near you:<input type="text" placeholder="City..." id="shopSearch" onkeyup="filterSearch()">
+            </div>
+            <a href="https://www.google.com/maps/place/Birmingham/@52.4877005,-1.8975805,15z/data=!4m5!3m4!1s0x4870942d1b417173:0xca81fef0aeee7998!8m2!3d52.486243!4d-1.890401">Birmingham</a>
+            <a href="https://www.google.com/maps/place/Manchester/@53.4723272,-2.2935015,12z/data=!4m5!3m4!1s0x487a4d4c5226f5db:0xd9be143804fe6baa!8m2!3d53.4807593!4d-2.2426305">Manchester</a>
+            <a href="https://www.google.com/maps/place/Bristol/@51.4686194,-2.7307965,11z/data=!3m1!4b1!4m5!3m4!1s0x4871836681b3d861:0x8ee4b22e4b9ad71f!8m2!3d51.454513!4d-2.58791">Bristol</a>
+            <a href="https://www.google.com/maps/place/Liverpool/@53.4123001,-3.0561377,11z/data=!3m1!4b1!4m5!3m4!1s0x487adf8a647060b7:0x42dc046f3f176e01!8m2!3d53.4083714!4d-2.9915726">Liverpool</a>
+            <a href="https://www.google.com/maps/place/Oxford/@51.7505018,-1.3176265,12z/data=!3m1!4b1!4m5!3m4!1s0x48713380adc41faf:0xc820dba8cb547402!8m2!3d51.7520209!4d-1.2577263">Oxford</a>
+            <a href="https://www.google.com/maps/place/Cambridge/@52.1989266,0.0499485,12z/data=!3m1!4b1!4m5!3m4!1s0x47d85d89f32a012d:0x63a320e1a35e3d21!8m2!3d52.205337!4d0.121817">Cambridge</a>
+            <a href="https://www.google.com/maps/place/Glasgow/@55.8555734,-4.3725374,11z/data=!3m1!4b1!4m5!3m4!1s0x488815562056ceeb:0x71e683b805ef511e!8m2!3d55.864237!4d-4.251806">Glasgow</a>
+            <a href="https://www.google.com/maps/place/Cardiff/@51.5023268,-3.2750887,12z/data=!3m1!4b1!4m5!3m4!1s0x486e02d434ec53f5:0x143406db6586670e!8m2!3d51.481581!4d-3.17909">Cardiff</a>
+            <a href="https://www.google.com/maps/place/Belfast/@54.594998,-6.0667112,11z/data=!3m1!4b1!4m5!3m4!1s0x4860fffdd7d08a3b:0x2e57162cefc7c531!8m2!3d54.597285!4d-5.93012">Belfast</a>
+            <a href="https://www.google.com/maps/place/Dublin,+Ireland/@54.594998,-6.0667112,11z/data=!4m2!3m1!1s0x48670e80ea27ac2f:0xa00c7a9973171a0">Dublin</a>
+            <a href="https://www.google.com/maps/place/York/@53.9586771,-1.1506303,12z/data=!3m1!4b1!4m5!3m4!1s0x4878c340e19865f1:0x4774ab898a54e4d1!8m2!3d53.9599651!4d-1.0872979">York</a>
+            <a href="https://www.google.com/maps/place/Bath/@51.3802127,-2.4345687,12z/data=!3m1!4b1!4m5!3m4!1s0x487178a6743ee12d:0x138b27d0d66d9a09!8m2!3d51.3810641!4d-2.3590167">Bath</a>
+            <a href="https://www.google.com/maps/place/Edinburgh/@55.9413212,-3.3454175,11z/data=!3m1!4b1!4m5!3m4!1s0x4887b800a5982623:0x64f2147b7ce71727!8m2!3d55.953252!4d-3.188267">Edinburgh</a>
+            <a href="https://www.google.com/maps/place/Central+London,+London+SW1A+2DX/@51.5074156,-0.1452094,14z/data=!3m1!4b1!4m5!3m4!1s0x487604ce360028eb:0x69f06a655ee183a5!8m2!3d51.5073907!4d-0.1276999">Central London</a>
+        </div>
     </main>
+
+    <!-- The right side menu used by larger screens to cycle through the pages. -->
     <aside class ="menu-right">
-        <a href="coffee-club.html"><img src="src/rightArrow.png"></a>
+        <a href="coffee-club.html"><img src="src/rightArrow.png" alt="Navigate to the right page"></a>
     </aside>
-    <footer>Footer</footer>
+
+    <!-- Footer containing a signature. -->
+    <footer>Jack Holdsworth 20023933</footer>
 </body>
 </html>

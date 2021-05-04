@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- A boilerplate telling the browser the HTML Metadata -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <title>Welcome</title>
 </head>
+
+<!-- Main body containing the HTML, sets the grid container to the body. -->
 <body class="grid-container">
+
+    <!-- The header contains a text heading and a small logo contained within a flexbox. -->
     <header>
-        <img src="src\MinILOGO.png" id="miniLogo">
+        <img src="src/miniLogo.png" id="miniLogo" alt="Company logo of a two coffee beans">
         <div class="header-center">
             <h1 id="title">Forza Coffee</h1> 
         </div>
-        <hr>
-        
+        <hr id="titleUnderLine">
     </header>
+
+    <!-- The navigation bar consits of 4 clickable elements within a flexbox that are responsive to the window size. -->
     <nav>
         <ul class="navBar">
-            <li><a href="#"><img src="src/home.png" id="navSelected"></a></li>
-            <li><a href="info.html"><img src="src/INFO.png"></a></li>
-            <li><a href="location.html"><img src="src/location.png"></a></li>
-            <li><a href="coffee-club.html"><img src="src/LS.png"></a></li>
+            <li><a href="#"><img src="src/home.png" id="navSelected" alt="Home pagebutton"></a></li>
+            <li><a href="info.html"><img src="src/info.png" alt="Infomation page button"></a></li>
+            <li><a href="location.html"><img src="src/location.png" alt="Shop location page button"></a></li>
+            <li><a href="coffee-club.html"><img src="src/LS.png" alt="Coffee club page button"></a></li>
         </ul>
     </nav>
+
+    <!-- The left side menu used by larger screens to cycle through the pages. -->
     <aside class="menu-left">
-        <a href="coffee-club.html"><img src="src/leftArrow.png"></a>
+        <a href="coffee-club.html"><img src="src/leftArrow.png" alt="Navigate to the left page"></a>
     </aside>
+
+    <!-- The main section contains the logo and a short text about Forza Coffee. -->
     <main class="main">
-        <img src="src/mainLogo.png" id="mainLogo">
-        <p id="mainParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis veniam adipisci facilis enim, expedita ad dolorum libero atque deleniti ut totam esse voluptatibus quis rerum iste ipsa. Eum, nam!</p>
-        <p id="mainParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis veniam adipisci facilis enim, expedita ad dolorum libero atque deleniti ut totam esse voluptatibus quis rerum iste ipsa. Eum, nam!</p>
+        <img src="src/mainLogo.png" id="mainLogo" alt="Company logo of a two coffee beans">
+        <p id="mainParagraph">Here at Froza Coffee we pride ourselves with making a great coffee that leaves a positive aftertaste on the world.</p>
     </main>
+    
+    <!-- The right side menu used by larger screens to cycle through the pages. -->
     <aside class ="menu-right">
-        <a href="info.html"><img src="src/rightArrow.png"></a>
+        <a href="info.html"><img src="src/rightArrow.png" alt="Navigate to the right page"></a>
     </aside>
-    <footer>Footer</footer>
+
+    <!-- Footer containing a signature. -->
+    <footer>Jack Holdsworth 20023933</footer>
 </body>
 </html>
-
-<!-- https://www.youtube.com/watch?v=t90K6HExEJo -->

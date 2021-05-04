@@ -1,0 +1,442 @@
+/* Establishes the height of the HTML for the grid. */
+html{
+    height: 100%;
+}
+
+/* Applies a background image and styling across the whole site. */
+body {
+    background-image: url('pexels-afta-putta-gunawan-683039.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #fff0e0;
+    color:#383839;
+    font-family: Montserrat;
+    margin: 0px;
+}
+
+/* ----------------------------------------Header Start---------------------------------------- */
+/* Assigns header to area within grid and establishes a flexbox for its own content */
+header {
+    margin: 0px;
+    grid-area: header;
+    display: flex;
+    flex-flow: wrap;
+    background-color: #fff0e0;
+    top: 0;
+}
+ 
+/* Sizes the header logo to fit within container */
+#miniLogo {
+    object-fit: contain;
+    grid-area: header;
+    height: 100%;
+}
+
+/* Setup for flexbox for title and title Underline */
+.header-center {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction:column;
+    background-color: #fff0e0;
+    flex-grow: 1;
+    margin: 0px;
+    height: 100%;
+}
+
+/* title sytling */
+#title {
+    padding: 0px;
+    margin: 0px;
+    font-size: 8vh;
+}
+
+/* title underline styling */
+#titleUnderLine{
+    margin: 0;
+    grid-area: header;
+    width: 90%;
+    margin-left: 5%;
+    height: 10px;
+    background: black;
+    height: 4px;
+    position: relative;
+    top: -10%;
+    border: none;
+}
+
+/* ----------------------------------------Header End---------------------------------------- */
+
+/* ----------------------------------------Nav Start---------------------------------------- */
+/* Assigns nav to area within grid */
+nav {
+    grid-area: nav;
+    margin: 1%;
+}
+
+/* Setup for flexbox for title and title Underline */
+.navBar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Sizes the nav image to fit within container */
+.navBar img {
+    
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Applies a gray filter to the selected webpage on the navbar */
+#navSelected {
+    filter: brightness(50%);
+}
+
+/* ----------------------------------------Nav End---------------------------------------- */
+
+/* ----------------------------------------Main Start---------------------------------------- */
+/* Assigns main to area within grid, and setup for a flexbox */
+.main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    flex-direction: column;
+    color: #fff0e0;
+}
+
+/* Assigns main to area within grid, and setup for a flexbox */
+.mainCC a{
+    display: block;
+    color: #f6f6f6;
+    margin: 0.5%;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #f6f6f6;
+}
+
+/* Assigns main to area within grid, and setup for a flexbox */
+.mainLocation {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #383839;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    width: 90%;
+}
+
+.sectionTitle {
+    margin: 0;
+}
+
+/* ----------------------------------------Main End---------------------------------------- */
+
+/* ----------------------------------------Side-Menu Start---------------------------------------- */
+/* Assigns main to area within grid*/
+.menu-left {
+    grid-area: menu-left;
+    align-self: center;
+}
+
+/* Sizes the nav image to fit within container  */
+.menu-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Assigns main to area within grid*/
+.menu-right {
+    grid-area: menu-right;
+    align-self: center;
+}
+
+/* Sizes the nav image to fit within container  */
+.menu-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ----------------------------------------Side-Menu End---------------------------------------- */
+
+/* ----------------------------------------Footer Start---------------------------------------- */
+/* Assigns footer to area within grid*/
+footer{
+    grid-area: footer;
+    color: lightgray;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+/* ----------------------------------------Footer End---------------------------------------- */
+/* styling for the home page logo */
+#mainLogo {
+    margin-right: 0;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    z-index:0;
+}
+
+/* styling for the home page paragraph */
+#mainParagraph {
+    z-index: 1;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    background-color: #383839;
+    border-radius: 25px;
+}
+
+/* ----------------------------------------Form Start---------------------------------------- */
+/* Styling for input form */
+.formInput {
+    padding: 0;
+}
+.formInput input{
+    width: 90%;
+    padding: 12px 0px;
+    margin: 8px 0;
+    display: block;
+    margin: 2% auto 2% auto;
+}
+.formInput input[type=submit]{
+    width: 30%;
+}
+.formInput li{
+    list-style-type: none;
+}
+#searchBox {
+    width: 100%;
+    padding: 2% 0;
+    
+}
+#shopSearch {
+    width: 30%;
+    justify-items: center;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+.mainLocation a {
+    display: block;
+    color: #f6f6f6;
+    margin: 0.5%;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #f6f6f6;
+}
+
+/* ----------------------------------------Form End---------------------------------------- */
+
+/* ----------------------------------------Media Queries Start---------------------------------------- */
+
+/* Media query for smaller aspect ration devices e.g phones */
+@media (max-aspect-ratio: 4/6) {
+    /* Grid setup and deffintions/templates */
+    .grid-container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 10% 15% 50% 15% 10%;
+        grid-template-rows: 10% 78% 7% 5%;
+        grid-template-areas:
+        'header header header header header'
+        'main main main main main'
+        'nav-left nav nav nav nav-right'
+        'footer footer footer footer footer';
+    }
+
+    /* Makes the title responsive by asssinging font size to a fraction of the vewport height */
+    #title {
+        font-size: 8vw;
+    }
+
+    /* Hides some menus allowing for a better viewing experince on smaller devices */
+    .menu-left {
+        display: none;
+    }
+    .menu-right {
+        display: none;
+    }
+    #miniLogo {
+        display: none;
+    }
+
+    /* Setup and styling for responsive design on infomration page and device is smaller */
+    #section1picture {
+        width: 30%;
+        object-fit: contain;
+        position:relative;
+        z-index: 1;
+        
+    }
+    .section1 {
+        margin-top: 1%;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section1Content {
+        margin-top: -5%;
+        padding-top: 5%;
+        background-color: #383839;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        color: #fff0e0;
+        text-align: center;
+    }
+    #section2picture {
+        width: 30%;
+        object-fit: contain;
+        position:relative;
+        z-index: 1;
+    }
+    .section2Content {
+        margin-top: -5%;
+        padding-top: 5%;
+        background-color: #383839;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        color: #fff0e0;
+        text-align: center;
+    }
+    .section2 {
+        margin-top: 1%;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Changes width of the form if the device is smaller */
+    #form {
+        width: 80%;
+    }
+
+    /* Changes the boarder if the device is smaller */
+    .mainCC {
+        grid-area: main;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: auto;
+        flex-direction: column;
+        background-color: #383839;
+        color: #fff0e0;
+        border-radius: 0 0 50px 50px;
+    }
+}
+
+/* Media query for larger aspect ration devices e.g tablets, desktops */
+@media (min-aspect-ratio: 4/6) {
+    /* Grid setup and deffintions/templates */
+    .grid-container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 5% 15% 60% 15% 5%;
+        grid-template-rows: 10% 10% auto 5%;
+        grid-template-areas:
+        'header header header header header'
+        'nav-left nav-left nav nav-right nav-right'
+        'menu-left main main main menu-right'
+        'footer footer footer footer footer';
+    }
+
+    /* Setup and styling for responsive design on infomration page and the device is bigger */
+    #section1picture {
+        height: 110%;
+        padding-left: 1vh;
+        object-fit: contain;
+    }
+    .section1 {
+        margin-top: 1%;
+        height: 30%;
+        width: 80%;
+        display: flex;
+        background: linear-gradient(90deg, transparent 12vh, #383839 12vh);
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 20%;
+        border-radius: 0 25px 25px 0;
+    }
+    .section1Content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
+        color: #fff0e0;
+        padding-left: 2%;
+        padding-top: 2%;
+    }
+    #section2picture {
+        height: 110%;
+        padding-right: 1vh;
+        object-fit: contain;
+    }
+    .section2Content {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        overflow-y: auto;
+        transform: rotateY(180deg);
+        color: #fff0e0;
+        padding-left: 2%;
+        padding-top: 2%;
+    }
+    .section2 {
+        margin-top: 1%;
+        height: 30%;
+        width: 80%;
+        display: flex;
+        background: linear-gradient(90deg, transparent 12vh, #383839 12vh);
+        justify-content: flex-start;
+        align-items: center;
+        transform: rotateY(180deg);
+        margin-left: 20%;
+        border-radius: 0 25px 25px 0;
+    }
+
+    /* Changes width of the form if the device is bigger */
+    #form {
+        width: 60%;
+    }
+
+    /* Changes the boarder if the device is bigger */
+    .mainCC {
+        grid-area: main;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: auto;
+        flex-direction: column;
+        background-color: #383839;
+        color: #fff0e0;
+        border-radius: 50px;
+    }
+}
+
+/* ----------------------------------------Media Queies End---------------------------------------- */
